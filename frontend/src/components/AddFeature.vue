@@ -65,7 +65,9 @@
       </div>
 
       <div v-else>
-        <h4>You submitted successfully!</h4>
+        <div class="alert alert-success" role="alert">
+          You submitted successfully!
+        </div>
         <div>
           <button class="btn btn-success" @click="newFeature">Add</button>
         </div>
@@ -122,7 +124,6 @@ export default {
         FeatureDataService.create(data)
         .then(response => {
           this.feature.id = response.data.id;
-          console.log(response.data);
           this.submitted = true;
         })
         .catch(e => {
@@ -133,7 +134,17 @@ export default {
 
     newFeature() {
       this.submitted = false;
-      this.feature = {};
+      this.feature = {
+        errors: {
+          'name': '',
+          'description': '',
+          'featType': '',
+        },
+        id: null,
+        name: "",
+        description: "",
+        feat_type: "",
+      };
     }
   }
 };

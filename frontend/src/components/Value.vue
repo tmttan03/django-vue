@@ -1,6 +1,6 @@
 <template>
   <div v-if="currentValue" class="edit-form">
-    <h4>{{ currentValue.name }}</h4>
+    <h4>Edit</h4>
 
     <p>{{ message }}</p>
 

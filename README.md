@@ -61,7 +61,6 @@ CORS_ORIGIN_WHITELIST = (
 )
 ```
 4. Migrate the files with
-
 ```
 $ python manage.py migrate
 ```
@@ -70,14 +69,14 @@ $ python manage.py migrate
 
 1. Open two terminals, you can place it side by side then run the following code.
 ## Note: Make sure you are in the root directory of the project, you should be able to find the manage.py file
-## TERMINAL ONE
 ```
+## TERMINAL ONE ##
 python manage.py runserver
 ```
 
-## TERMINAL TWO
 ## Note: Make sure you could find the package.json file so you can install the dependencies.
 ```
+## TERMINAL TWO ##
 cd frontend
 yarn install
 yarn serve

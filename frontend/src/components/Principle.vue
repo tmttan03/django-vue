@@ -55,7 +55,6 @@ export default {
       FeatureDataService.get(id)
         .then(response => {
           this.currentPrinciple = response.data;
-          console.log(response.data);
         })
         .catch(e => {
           console.log(e);
