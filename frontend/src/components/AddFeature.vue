@@ -108,17 +108,14 @@ export default {
 
       if(!this.feature.name){
         this.feature.errors.name = "This field is required";
-        return false;
       }
 
       if(!this.feature.description){
         this.feature.errors.description = "This field is required";
-        return false;
       }
 
       if(!this.feature.featType){
         this.feature.errors.featType = "This field is required";
-        return false;
       }
 
       if(this.feature.name && this.feature.description && this.feature.featType){

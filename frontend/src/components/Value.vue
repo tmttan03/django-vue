@@ -2,7 +2,9 @@
   <div v-if="currentValue" class="edit-form">
     <h4>Edit</h4>
 
-    <p>{{ message }}</p>
+    <div class="alert alert-success" role="alert" v-if="message">
+      {{ message }}
+    </div>
 
     <form>
       <div class="form-group mb-3">
