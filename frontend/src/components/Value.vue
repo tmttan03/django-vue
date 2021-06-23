@@ -15,6 +15,7 @@
         <label for="description">Description</label>
         <textarea class="form-control" id="description"
           v-model="currentValue.description"
+          rows="4"
         />
       </div>
     </form>
@@ -93,7 +94,7 @@ export default {
 
 <style>
 .edit-form {
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
 }
 </style>

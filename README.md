@@ -65,13 +65,18 @@ CORS_ORIGIN_WHITELIST = (
 $ python manage.py migrate
 ```
 
+5. Load initial data
+```
+$ python manage.py loaddata core/fixtures/initial_data.json
+```
+
 ## Run Project Instructions
 
 1. Open two terminals, you can place it side by side then run the following code.
 ## Note: Make sure you are in the root directory of the project, you should be able to find the manage.py file
 ```
 ## TERMINAL ONE ##
-python manage.py runserver
+python manage.py runserver 8080
 ```
 
 ## Note: Make sure you could find the package.json file so you can install the dependencies.

@@ -23,6 +23,7 @@
             required
             v-model="feature.description"
             name="description"
+            rows="4"
           />
           <small class="text-danger" v-if="feature.errors.description">{{ feature.errors.description }}</small>
         </div>

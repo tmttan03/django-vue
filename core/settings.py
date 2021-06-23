@@ -167,6 +167,10 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8081',
 )
 
+FIXTURE_DIRS = (
+   os.path.join(BASE_DIR, 'fixtures'),
+)
+
 try:
     from .local import *
 except ImportError as e:

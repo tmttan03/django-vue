@@ -1,6 +1,6 @@
 <template>
   <div v-if="currentPrinciple" class="edit-form">
-    <h4>{{ currentPrinciple.name }}</h4>
+    <h4>Edit</h4>
 
     <p>{{ message }}</p>
 
@@ -15,6 +15,7 @@
         <label for="description">Description</label>
         <textarea class="form-control" id="description"
           v-model="currentPrinciple.description"
+          rows="4"
         />
       </div>
     </form>
@@ -92,7 +93,7 @@ export default {
 
 <style>
 .edit-form {
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
 }
 </style>
